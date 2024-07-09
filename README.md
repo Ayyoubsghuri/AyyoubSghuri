@@ -20,7 +20,7 @@
 
 <br clear="both">
 
-<h1 align="center">Hey YOU 👋</h1>
+<h1 align="center"><i>Hey</i> <b> YOU </b>👋</h1>
 
 ###
 
@@ -29,8 +29,8 @@
 ###
 
 <p align="left">I'm Ayyoub Sghuri from Morocco<br><br>- 🔭 I’m working as Full-Stack Developer<br>- 📚 I'm currently learning Data Science<br>- ⚡ Creative.
-<br>- 📫 How to reach me **ayyoub.sghuri@gmail.com**
-<br>- 📄 Know about my experiences [https://ayyoubsghuri.tiiny.site/](https://ayyoubsghuri.tiiny.site/)
+<br>- 📫 How to reach me <a href="ayyoub.sghuri@gmail.com">ayyoub.sghuri@gmail.com</a
+<br>- 📄 My resume : https://ayyoubsghuri.tiiny.site/
 </p>
 ###
 
