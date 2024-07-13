@@ -29,7 +29,7 @@
 
 ###
 
-<p align="left">I'm Ayyoub Sghuri from Morocco<br><br>- 🔭 I’m working as Full-Stack Developer<br>- 📚 I'm currently learning Data Science<br>- ⚡ Creative.
+<p align="left">I'm Ayyoub Sghuri from Morocco<br><br>- 🔭 I’m working as Full-Stack Developer/ Python developer<br>- 📚 I'm currently learning Data Science<br>- ⚡ Creative.
 <br>- 📫 How to reach me <a href="mailto:ayyoub.sghuri@gmail.com">ayyoub.sghuri@gmail.com</a>
 <br> - 📄 My resume : https://ayyoubsghuri.tiiny.site/
 </p>
