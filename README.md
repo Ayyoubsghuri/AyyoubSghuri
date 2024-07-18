@@ -13,7 +13,7 @@
 ###
 
 <div align="center">
-  <img height="300%" src="https://github.com/AyoubSghuri/AyoubSghuri/blob/main/.github/workflows/Green%20and%20White%20Minimalist%20Brand%20Fashion%20Linkedin%20Banner.png"  />
+  <img height="1000%" src="https://github.com/AyoubSghuri/AyoubSghuri/blob/main/.github/workflows/Green%20and%20White%20Minimalist%20Brand%20Fashion%20Linkedin%20Banner.png"  />
 </div>
 
 ###
