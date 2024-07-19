@@ -13,7 +13,7 @@
 ###
 
 <div align="center">
-  <img height="1000%" src="https://github.com/AyoubSghuri/AyoubSghuri/blob/main/.github/workflows/Green%20and%20White%20Minimalist%20Brand%20Fashion%20Linkedin%20Banner.png"  />
+  <img height="1000%" src="https://github.com/AyyoubSghuri/AyyoubSghuri/blob/main/.github/workflows/Green%20and%20White%20Minimalist%20Brand%20Fashion%20Linkedin%20Banner.png"  />
 </div>
 
 ###
@@ -100,11 +100,11 @@
 ###
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=ayoubsghuri&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
+  <img src="https://streak-stats.demolab.com?user=Ayyoubsghuri&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
 </div>
 
 ###
 
-<img src="https://raw.githubusercontent.com/ayoubsghuri/ayoubsghuri/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/snake.svg" alt="Snake animation" />
 
 ###
