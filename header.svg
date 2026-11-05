@@ -1,77 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0E2A2E"/>
-      <stop offset="1" stop-color="#16443F"/>
-    </linearGradient>
-    <radialGradient id="light" cx="0.85" cy="0.35" r="0.6">
-      <stop offset="0" stop-color="#F5B83D" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#F5B83D" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
-    </pattern>
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F5B83D" stop-opacity="0"/>
-      <stop offset="1" stop-color="#F5B83D" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#9FB8B4" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#C9B37E" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#9FB8B4" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="card"><rect width="1200" height="320" rx="18"/></clipPath>
-    <style>
-      .name { font: 700 64px 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #F4EFE3; letter-spacing: -1px; }
-      .tag  { font: 700 17px 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #F5B83D; letter-spacing: 3.5px; }
-      .meta { font: 400 16px 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #B9CCC8; }
-      .mono { font: 400 11px 'SFMono-Regular', Consolas, 'Courier New', monospace; fill: #7FA19C; letter-spacing: 2px; }
-      .spin  { animation: spin 40s linear infinite; transform-origin: 1040px 135px; }
-      .spinr { animation: spin 26s linear infinite reverse; transform-origin: 1040px 135px; }
-      .sweep { animation: spin 6s linear infinite; transform-origin: 1040px 135px; }
-      @keyframes spin { to { transform: rotate(360deg); } }
-      .bar { animation: bar 4s ease-in-out infinite; transform-origin: 86px 0; }
-      @keyframes bar { 0%,100% { transform: scaleX(1); } 50% { transform: scaleX(1.8); } }
-      .live { animation: live 2s ease-in-out infinite; }
-      @keyframes live { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470">
+<defs>
+  <linearGradient id="artg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3FB950"/><stop offset="0.5" stop-color="#39C5CF"/><stop offset="1" stop-color="#58A6FF"/>
+  </linearGradient>
+  <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+    <feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity="0.18"/></pattern>
+  <clipPath id="win"><rect width="1200" height="470" rx="12"/></clipPath>
+  <clipPath id="typed"><rect x="0" y="0" width="1200" height="470"><animate attributeName="width" from="70" to="1200" dur="1.2s" begin="0s" fill="freeze" calcMode="discrete" values="70;105;140;175;210;245;280;315;350;385;420;1200"/></rect></clipPath>
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code','Cascadia Code',Consolas,'Courier New',monospace; font-size: 14px; white-space: pre; }
+    .dim { fill: #484F58; }
+    .l { animation: show 0.01s steps(1) both; }
+    @keyframes show { from { opacity: 0; } to { opacity: 1; } }
+    .art { animation: boot 0.9s ease-out both; animation-delay: 1.3s; }
+    @keyframes boot { 0% { opacity: 0; } 20% { opacity: .8; } 30% { opacity: .2; } 50% { opacity: 1; } 60% { opacity: .5; } 100% { opacity: 1; } }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .pulse { animation: show 0.01s steps(1) both, pulse 1.6s ease-in-out infinite; }
+    @keyframes pulse { 50% { opacity: .3; } }
+    .roll { animation: roll 7s linear infinite; }
+    @keyframes roll { from { transform: translateY(-20px); } to { transform: translateY(490px); } }
+  </style>
+</defs>
+<g clip-path="url(#win)">
+  <rect width="1200" height="470" fill="#0D1117"/>
 
-  <g clip-path="url(#card)">
-    <rect width="1200" height="320" fill="url(#bg)"/>
-    <rect width="1200" height="320" fill="url(#grid)"/>
-    <rect width="1200" height="320" fill="url(#light)"/>
+  <!-- title bar -->
+  <rect width="1200" height="40" fill="#161B22"/>
+  <line x1="0" y1="40" x2="1200" y2="40" stroke="#30363D"/>
+  <circle cx="24" cy="20" r="6.5" fill="#FF5F57"/><circle cx="46" cy="20" r="6.5" fill="#FEBC2E"/><circle cx="68" cy="20" r="6.5" fill="#28C840"/>
+  <text x="600.0" y="25" text-anchor="middle" fill="#8B949E" font-size="13">ayyoub@github: ~ — bash — 120×32</text>
 
-    <!-- left: identity -->
-    <rect class="bar" x="86" y="70" width="50" height="4" rx="2" fill="#F5B83D"/>
-    <text class="name" x="84" y="152">Ayyoub Sghuri</text>
-    <text class="tag" x="88" y="198">FULL-STACK DEVELOPER · PYTHON · .NET</text>
-    <text class="meta" x="88" y="252">github.com/Ayyoubsghuri</text>
-    <circle class="live" cx="300" cy="247" r="4" fill="#4ADE80"/>
-    <text class="meta" x="312" y="252" fill-opacity="0.85">Open to work</text>
-
-    <!-- right: radar mark -->
-    <g fill="none">
-      <circle cx="1040" cy="135" r="96" stroke="#F5B83D" stroke-opacity="0.18"/>
-      <circle class="spin" cx="1040" cy="135" r="76" stroke="#F5B83D" stroke-width="1.5" stroke-opacity="0.85" stroke-dasharray="120 14 6 14"/>
-      <circle class="spinr" cx="1040" cy="135" r="50" stroke="#C9B37E" stroke-opacity="0.55" stroke-dasharray="3 7"/>
-      <path class="sweep" d="M1040 135 L1116 135 A76 76 0 0 0 1094 81 Z" fill="url(#sweep)" stroke="none"/>
-      <line x1="944" y1="135" x2="1136" y2="135" stroke="#FFFFFF" stroke-opacity="0.06"/>
-      <line x1="1040" y1="39" x2="1040" y2="231" stroke="#FFFFFF" stroke-opacity="0.06"/>
-    </g>
-    <circle cx="1040" cy="135" r="9" fill="#F5B83D">
-      <animate attributeName="r" values="8;10;8" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1040" cy="135" r="9" fill="none" stroke="#F5B83D">
-      <animate attributeName="r" values="9;40" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="3.5" fill="#F4EFE3">
-      <animateMotion dur="9s" repeatCount="indefinite" path="M1116 135 A76 76 0 1 1 964 135 A76 76 0 1 1 1116 135"/>
-    </circle>
-
-    <!-- bottom-right detail -->
-    <line x1="960" y1="262" x2="1124" y2="262" stroke="url(#rule)" stroke-width="2"/>
-    <text class="mono" x="1042" y="284" text-anchor="middle">BASED IN MOROCCO</text>
+  <!-- first command, typed -->
+  <g clip-path="url(#typed)">
+    <text x="48" y="80"><tspan fill="#3FB950">➜ </tspan><tspan fill="#58A6FF">~ </tspan><tspan fill="#E6EDF3">figlet "Ayyoub Sghuri" &amp;&amp; neofetch</tspan></text>
   </g>
+
+  <!-- ascii name -->
+  <g class="art">
+    <path d="M93.6 116.5H97.4M97.4 116.5V123.0M124.0 116.5H127.8M127.8 116.5V123.0M169.6 116.5H173.4M173.4 116.5V123.0M192.4 116.5H196.2M196.2 116.5V123.0M238.0 116.5H241.8M241.8 116.5V123.0M298.8 116.5H302.6M302.6 116.5V123.0M329.2 116.5H333.0M333.0 116.5V123.0M374.8 116.5H378.6M378.6 116.5V123.0M428.0 116.5H431.8M431.8 116.5V123.0M67.0 129.5H70.8M67.0 129.5V136.0M74.6 129.5H78.4M70.8 129.5H74.6M82.2 129.5H86.0M78.4 129.5H82.2M101.2 129.5H105.0M105.0 129.5V136.0M112.6 129.5H116.4M112.6 123.0V129.5M131.6 129.5H135.4M135.4 129.5V136.0M165.8 129.5H169.6M165.8 129.5V136.0M169.6 129.5H173.4M173.4 123.0V129.5M181.0 129.5H184.8M181.0 123.0V129.5M200.0 129.5H203.8M203.8 129.5V136.0M234.2 129.5H238.0M234.2 129.5V136.0M238.0 129.5H241.8M241.8 123.0V129.5M264.6 129.5H268.4M264.6 129.5V136.0M272.2 129.5H276.0M268.4 129.5H272.2M279.8 129.5H283.6M276.0 129.5H279.8M287.4 129.5H291.2M283.6 129.5H287.4M306.4 129.5H310.2M310.2 129.5V136.0M333.0 129.5V136.0M333.0 123.0V129.5M378.6 129.5V136.0M378.6 123.0V129.5M401.4 129.5H405.2M401.4 129.5V136.0M409.0 129.5H412.8M405.2 129.5H409.0M416.6 129.5H420.4M412.8 129.5H416.6M435.6 129.5H439.4M439.4 129.5V136.0M105.0 142.5V149.0M105.0 136.0V142.5M120.2 142.5H124.0M120.2 136.0V142.5M158.2 142.5H162.0M158.2 142.5V149.0M162.0 142.5H165.8M165.8 136.0V142.5M188.6 142.5H192.4M188.6 136.0V142.5M226.6 142.5H230.4M226.6 142.5V149.0M230.4 142.5H234.2M234.2 136.0V142.5M264.6 142.5V149.0M264.6 136.0V142.5M310.2 142.5V149.0M310.2 136.0V142.5M333.0 142.5V149.0M333.0 136.0V142.5M378.6 142.5V149.0M378.6 136.0V142.5M431.8 142.5H435.6M431.8 142.5V149.0M435.6 142.5H439.4M439.4 136.0V142.5M67.0 155.5H70.8M67.0 155.5V162.0M74.6 155.5H78.4M70.8 155.5H74.6M82.2 155.5H86.0M78.4 155.5H82.2M105.0 155.5V162.0M105.0 149.0V155.5M127.8 155.5H131.6M127.8 149.0V155.5M150.6 155.5H154.4M150.6 155.5V162.0M154.4 155.5H158.2M158.2 149.0V155.5M196.2 155.5H200.0M196.2 149.0V155.5M219.0 155.5H222.8M219.0 155.5V162.0M222.8 155.5H226.6M226.6 149.0V155.5M264.6 155.5V162.0M264.6 149.0V155.5M310.2 155.5V162.0M310.2 149.0V155.5M333.0 155.5V162.0M333.0 149.0V155.5M378.6 155.5V162.0M378.6 149.0V155.5M401.4 155.5H405.2M401.4 155.5V162.0M409.0 155.5H412.8M405.2 155.5H409.0M416.6 155.5H420.4M412.8 155.5H416.6M435.6 155.5H439.4M439.4 155.5V162.0M67.0 168.5V175.0M67.0 162.0V168.5M105.0 168.5V175.0M105.0 162.0V168.5M150.6 168.5V175.0M150.6 162.0V168.5M219.0 168.5V175.0M219.0 162.0V168.5M249.4 168.5H253.2M249.4 162.0V168.5M302.6 168.5H306.4M302.6 168.5V175.0M306.4 168.5H310.2M310.2 162.0V168.5M317.8 168.5H321.6M317.8 162.0V168.5M371.0 168.5H374.8M371.0 168.5V175.0M374.8 168.5H378.6M378.6 162.0V168.5M431.8 168.5H435.6M431.8 168.5V175.0M435.6 168.5H439.4M439.4 162.0V168.5M51.8 181.5H55.6M51.8 175.0V181.5M59.4 181.5H63.2M55.6 181.5H59.4M63.2 181.5H67.0M67.0 175.0V181.5M89.8 181.5H93.6M89.8 175.0V181.5M97.4 181.5H101.2M93.6 181.5H97.4M101.2 181.5H105.0M105.0 175.0V181.5M135.4 181.5H139.2M135.4 175.0V181.5M143.0 181.5H146.8M139.2 181.5H143.0M146.8 181.5H150.6M150.6 175.0V181.5M203.8 181.5H207.6M203.8 175.0V181.5M211.4 181.5H215.2M207.6 181.5H211.4M215.2 181.5H219.0M219.0 175.0V181.5M257.0 181.5H260.8M257.0 175.0V181.5M264.6 181.5H268.4M260.8 181.5H264.6M272.2 181.5H276.0M268.4 181.5H272.2M279.8 181.5H283.6M276.0 181.5H279.8M287.4 181.5H291.2M283.6 181.5H287.4M295.0 181.5H298.8M291.2 181.5H295.0M298.8 181.5H302.6M302.6 175.0V181.5M325.4 181.5H329.2M325.4 175.0V181.5M333.0 181.5H336.8M329.2 181.5H333.0M340.6 181.5H344.4M336.8 181.5H340.6M348.2 181.5H352.0M344.4 181.5H348.2M355.8 181.5H359.6M352.0 181.5H355.8M363.4 181.5H367.2M359.6 181.5H363.4M367.2 181.5H371.0M371.0 175.0V181.5M386.2 181.5H390.0M386.2 175.0V181.5M393.8 181.5H397.6M390.0 181.5H393.8M401.4 181.5H405.2M397.6 181.5H401.4M409.0 181.5H412.8M405.2 181.5H409.0M416.6 181.5H420.4M412.8 181.5H416.6M424.2 181.5H428.0M420.4 181.5H424.2M428.0 181.5H431.8M431.8 175.0V181.5M101.2 208.5H105.0M105.0 208.5V215.0M162.0 208.5H165.8M165.8 208.5V215.0M192.4 208.5H196.2M196.2 208.5V215.0M230.4 208.5H234.2M234.2 208.5V215.0M253.2 208.5H257.0M257.0 208.5V215.0M298.8 208.5H302.6M302.6 208.5V215.0M352.0 208.5H355.8M355.8 208.5V215.0M382.4 208.5H386.2M386.2 208.5V215.0M67.0 221.5H70.8M67.0 221.5V228.0M74.6 221.5H78.4M70.8 221.5H74.6M82.2 221.5H86.0M78.4 221.5H82.2M89.8 221.5H93.6M86.0 221.5H89.8M97.4 221.5H101.2M93.6 221.5H97.4M101.2 221.5H105.0M105.0 215.0V221.5M127.8 221.5H131.6M127.8 221.5V228.0M135.4 221.5H139.2M131.6 221.5H135.4M143.0 221.5H146.8M139.2 221.5H143.0M150.6 221.5H154.4M146.8 221.5H150.6M158.2 221.5H162.0M154.4 221.5H158.2M162.0 221.5H165.8M165.8 215.0V221.5M196.2 221.5V228.0M196.2 215.0V221.5M234.2 221.5V228.0M234.2 215.0V221.5M257.0 221.5V228.0M257.0 215.0V221.5M302.6 221.5V228.0M302.6 215.0V221.5M325.4 221.5H329.2M325.4 221.5V228.0M333.0 221.5H336.8M329.2 221.5H333.0M340.6 221.5H344.4M336.8 221.5H340.6M359.6 221.5H363.4M363.4 221.5V228.0M386.2 221.5V228.0M386.2 215.0V221.5M101.2 234.5H105.0M105.0 234.5V241.0M127.8 234.5V241.0M127.8 228.0V234.5M169.6 234.5H173.4M173.4 234.5V241.0M234.2 234.5V241.0M234.2 228.0V234.5M257.0 234.5V241.0M257.0 228.0V234.5M302.6 234.5V241.0M302.6 228.0V234.5M355.8 234.5H359.6M355.8 234.5V241.0M359.6 234.5H363.4M363.4 228.0V234.5M386.2 234.5V241.0M386.2 228.0V234.5M51.8 247.5H55.6M51.8 241.0V247.5M59.4 247.5H63.2M55.6 247.5H59.4M67.0 247.5H70.8M63.2 247.5H67.0M74.6 247.5H78.4M70.8 247.5H74.6M82.2 247.5H86.0M78.4 247.5H82.2M105.0 247.5V254.0M105.0 241.0V247.5M127.8 247.5V254.0M127.8 241.0V247.5M173.4 247.5V254.0M173.4 241.0V247.5M196.2 247.5H200.0M196.2 247.5V254.0M203.8 247.5H207.6M200.0 247.5H203.8M211.4 247.5H215.2M207.6 247.5H211.4M234.2 247.5V254.0M234.2 241.0V247.5M257.0 247.5V254.0M257.0 241.0V247.5M302.6 247.5V254.0M302.6 241.0V247.5M325.4 247.5H329.2M325.4 247.5V254.0M333.0 247.5H336.8M329.2 247.5H333.0M340.6 247.5H344.4M336.8 247.5H340.6M359.6 247.5H363.4M363.4 247.5V254.0M386.2 247.5V254.0M386.2 241.0V247.5M105.0 260.5V267.0M105.0 254.0V260.5M112.6 260.5H116.4M112.6 254.0V260.5M165.8 260.5H169.6M165.8 260.5V267.0M169.6 260.5H173.4M173.4 254.0V260.5M196.2 260.5V267.0M196.2 254.0V260.5M234.2 260.5V267.0M234.2 254.0V260.5M241.8 260.5H245.6M241.8 254.0V260.5M295.0 260.5H298.8M295.0 260.5V267.0M298.8 260.5H302.6M302.6 254.0V260.5M325.4 260.5V267.0M325.4 254.0V260.5M363.4 260.5V267.0M363.4 254.0V260.5M386.2 260.5V267.0M386.2 254.0V260.5M51.8 273.5H55.6M51.8 267.0V273.5M59.4 273.5H63.2M55.6 273.5H59.4M67.0 273.5H70.8M63.2 273.5H67.0M74.6 273.5H78.4M70.8 273.5H74.6M82.2 273.5H86.0M78.4 273.5H82.2M89.8 273.5H93.6M86.0 273.5H89.8M97.4 273.5H101.2M93.6 273.5H97.4M101.2 273.5H105.0M105.0 267.0V273.5M120.2 273.5H124.0M120.2 267.0V273.5M127.8 273.5H131.6M124.0 273.5H127.8M135.4 273.5H139.2M131.6 273.5H135.4M143.0 273.5H146.8M139.2 273.5H143.0M150.6 273.5H154.4M146.8 273.5H150.6M158.2 273.5H162.0M154.4 273.5H158.2M162.0 273.5H165.8M165.8 267.0V273.5M181.0 273.5H184.8M181.0 267.0V273.5M188.6 273.5H192.4M184.8 273.5H188.6M192.4 273.5H196.2M196.2 267.0V273.5M219.0 273.5H222.8M219.0 267.0V273.5M226.6 273.5H230.4M222.8 273.5H226.6M230.4 273.5H234.2M234.2 267.0V273.5M249.4 273.5H253.2M249.4 267.0V273.5M257.0 273.5H260.8M253.2 273.5H257.0M264.6 273.5H268.4M260.8 273.5H264.6M272.2 273.5H276.0M268.4 273.5H272.2M279.8 273.5H283.6M276.0 273.5H279.8M287.4 273.5H291.2M283.6 273.5H287.4M291.2 273.5H295.0M295.0 267.0V273.5M310.2 273.5H314.0M310.2 267.0V273.5M317.8 273.5H321.6M314.0 273.5H317.8M321.6 273.5H325.4M325.4 267.0V273.5M348.2 273.5H352.0M348.2 267.0V273.5M355.8 273.5H359.6M352.0 273.5H355.8M359.6 273.5H363.4M363.4 267.0V273.5M371.0 273.5H374.8M371.0 267.0V273.5M378.6 273.5H382.4M374.8 273.5H378.6M382.4 273.5H386.2M386.2 267.0V273.5" stroke="#2EA043" stroke-opacity="0.45" stroke-width="1.6" fill="none"/>
+    <path d="M55.6 110.0h7.6v13h-7.6zM63.2 110.0h7.6v13h-7.6zM70.8 110.0h7.6v13h-7.6zM78.4 110.0h7.6v13h-7.6zM86.0 110.0h7.6v13h-7.6zM108.8 110.0h7.6v13h-7.6zM116.4 110.0h7.6v13h-7.6zM154.4 110.0h7.6v13h-7.6zM162.0 110.0h7.6v13h-7.6zM177.2 110.0h7.6v13h-7.6zM184.8 110.0h7.6v13h-7.6zM222.8 110.0h7.6v13h-7.6zM230.4 110.0h7.6v13h-7.6zM253.2 110.0h7.6v13h-7.6zM260.8 110.0h7.6v13h-7.6zM268.4 110.0h7.6v13h-7.6zM276.0 110.0h7.6v13h-7.6zM283.6 110.0h7.6v13h-7.6zM291.2 110.0h7.6v13h-7.6zM314.0 110.0h7.6v13h-7.6zM321.6 110.0h7.6v13h-7.6zM359.6 110.0h7.6v13h-7.6zM367.2 110.0h7.6v13h-7.6zM382.4 110.0h7.6v13h-7.6zM390.0 110.0h7.6v13h-7.6zM397.6 110.0h7.6v13h-7.6zM405.2 110.0h7.6v13h-7.6zM412.8 110.0h7.6v13h-7.6zM420.4 110.0h7.6v13h-7.6zM48.0 123.0h7.6v13h-7.6zM55.6 123.0h7.6v13h-7.6zM86.0 123.0h7.6v13h-7.6zM93.6 123.0h7.6v13h-7.6zM116.4 123.0h7.6v13h-7.6zM124.0 123.0h7.6v13h-7.6zM146.8 123.0h7.6v13h-7.6zM154.4 123.0h7.6v13h-7.6zM184.8 123.0h7.6v13h-7.6zM192.4 123.0h7.6v13h-7.6zM215.2 123.0h7.6v13h-7.6zM222.8 123.0h7.6v13h-7.6zM245.6 123.0h7.6v13h-7.6zM253.2 123.0h7.6v13h-7.6zM291.2 123.0h7.6v13h-7.6zM298.8 123.0h7.6v13h-7.6zM314.0 123.0h7.6v13h-7.6zM321.6 123.0h7.6v13h-7.6zM359.6 123.0h7.6v13h-7.6zM367.2 123.0h7.6v13h-7.6zM382.4 123.0h7.6v13h-7.6zM390.0 123.0h7.6v13h-7.6zM420.4 123.0h7.6v13h-7.6zM428.0 123.0h7.6v13h-7.6zM48.0 136.0h7.6v13h-7.6zM55.6 136.0h7.6v13h-7.6zM63.2 136.0h7.6v13h-7.6zM70.8 136.0h7.6v13h-7.6zM78.4 136.0h7.6v13h-7.6zM86.0 136.0h7.6v13h-7.6zM93.6 136.0h7.6v13h-7.6zM124.0 136.0h7.6v13h-7.6zM131.6 136.0h7.6v13h-7.6zM139.2 136.0h7.6v13h-7.6zM146.8 136.0h7.6v13h-7.6zM192.4 136.0h7.6v13h-7.6zM200.0 136.0h7.6v13h-7.6zM207.6 136.0h7.6v13h-7.6zM215.2 136.0h7.6v13h-7.6zM245.6 136.0h7.6v13h-7.6zM253.2 136.0h7.6v13h-7.6zM291.2 136.0h7.6v13h-7.6zM298.8 136.0h7.6v13h-7.6zM314.0 136.0h7.6v13h-7.6zM321.6 136.0h7.6v13h-7.6zM359.6 136.0h7.6v13h-7.6zM367.2 136.0h7.6v13h-7.6zM382.4 136.0h7.6v13h-7.6zM390.0 136.0h7.6v13h-7.6zM397.6 136.0h7.6v13h-7.6zM405.2 136.0h7.6v13h-7.6zM412.8 136.0h7.6v13h-7.6zM420.4 136.0h7.6v13h-7.6zM48.0 149.0h7.6v13h-7.6zM55.6 149.0h7.6v13h-7.6zM86.0 149.0h7.6v13h-7.6zM93.6 149.0h7.6v13h-7.6zM131.6 149.0h7.6v13h-7.6zM139.2 149.0h7.6v13h-7.6zM200.0 149.0h7.6v13h-7.6zM207.6 149.0h7.6v13h-7.6zM245.6 149.0h7.6v13h-7.6zM253.2 149.0h7.6v13h-7.6zM291.2 149.0h7.6v13h-7.6zM298.8 149.0h7.6v13h-7.6zM314.0 149.0h7.6v13h-7.6zM321.6 149.0h7.6v13h-7.6zM359.6 149.0h7.6v13h-7.6zM367.2 149.0h7.6v13h-7.6zM382.4 149.0h7.6v13h-7.6zM390.0 149.0h7.6v13h-7.6zM420.4 149.0h7.6v13h-7.6zM428.0 149.0h7.6v13h-7.6zM48.0 162.0h7.6v13h-7.6zM55.6 162.0h7.6v13h-7.6zM86.0 162.0h7.6v13h-7.6zM93.6 162.0h7.6v13h-7.6zM131.6 162.0h7.6v13h-7.6zM139.2 162.0h7.6v13h-7.6zM200.0 162.0h7.6v13h-7.6zM207.6 162.0h7.6v13h-7.6zM253.2 162.0h7.6v13h-7.6zM260.8 162.0h7.6v13h-7.6zM268.4 162.0h7.6v13h-7.6zM276.0 162.0h7.6v13h-7.6zM283.6 162.0h7.6v13h-7.6zM291.2 162.0h7.6v13h-7.6zM321.6 162.0h7.6v13h-7.6zM329.2 162.0h7.6v13h-7.6zM336.8 162.0h7.6v13h-7.6zM344.4 162.0h7.6v13h-7.6zM352.0 162.0h7.6v13h-7.6zM359.6 162.0h7.6v13h-7.6zM382.4 162.0h7.6v13h-7.6zM390.0 162.0h7.6v13h-7.6zM397.6 162.0h7.6v13h-7.6zM405.2 162.0h7.6v13h-7.6zM412.8 162.0h7.6v13h-7.6zM420.4 162.0h7.6v13h-7.6zM48.0 202.0h7.6v13h-7.6zM55.6 202.0h7.6v13h-7.6zM63.2 202.0h7.6v13h-7.6zM70.8 202.0h7.6v13h-7.6zM78.4 202.0h7.6v13h-7.6zM86.0 202.0h7.6v13h-7.6zM93.6 202.0h7.6v13h-7.6zM116.4 202.0h7.6v13h-7.6zM124.0 202.0h7.6v13h-7.6zM131.6 202.0h7.6v13h-7.6zM139.2 202.0h7.6v13h-7.6zM146.8 202.0h7.6v13h-7.6zM154.4 202.0h7.6v13h-7.6zM177.2 202.0h7.6v13h-7.6zM184.8 202.0h7.6v13h-7.6zM215.2 202.0h7.6v13h-7.6zM222.8 202.0h7.6v13h-7.6zM238.0 202.0h7.6v13h-7.6zM245.6 202.0h7.6v13h-7.6zM283.6 202.0h7.6v13h-7.6zM291.2 202.0h7.6v13h-7.6zM306.4 202.0h7.6v13h-7.6zM314.0 202.0h7.6v13h-7.6zM321.6 202.0h7.6v13h-7.6zM329.2 202.0h7.6v13h-7.6zM336.8 202.0h7.6v13h-7.6zM344.4 202.0h7.6v13h-7.6zM367.2 202.0h7.6v13h-7.6zM374.8 202.0h7.6v13h-7.6zM48.0 215.0h7.6v13h-7.6zM55.6 215.0h7.6v13h-7.6zM108.8 215.0h7.6v13h-7.6zM116.4 215.0h7.6v13h-7.6zM177.2 215.0h7.6v13h-7.6zM184.8 215.0h7.6v13h-7.6zM215.2 215.0h7.6v13h-7.6zM222.8 215.0h7.6v13h-7.6zM238.0 215.0h7.6v13h-7.6zM245.6 215.0h7.6v13h-7.6zM283.6 215.0h7.6v13h-7.6zM291.2 215.0h7.6v13h-7.6zM306.4 215.0h7.6v13h-7.6zM314.0 215.0h7.6v13h-7.6zM344.4 215.0h7.6v13h-7.6zM352.0 215.0h7.6v13h-7.6zM367.2 215.0h7.6v13h-7.6zM374.8 215.0h7.6v13h-7.6zM48.0 228.0h7.6v13h-7.6zM55.6 228.0h7.6v13h-7.6zM63.2 228.0h7.6v13h-7.6zM70.8 228.0h7.6v13h-7.6zM78.4 228.0h7.6v13h-7.6zM86.0 228.0h7.6v13h-7.6zM93.6 228.0h7.6v13h-7.6zM108.8 228.0h7.6v13h-7.6zM116.4 228.0h7.6v13h-7.6zM146.8 228.0h7.6v13h-7.6zM154.4 228.0h7.6v13h-7.6zM162.0 228.0h7.6v13h-7.6zM177.2 228.0h7.6v13h-7.6zM184.8 228.0h7.6v13h-7.6zM192.4 228.0h7.6v13h-7.6zM200.0 228.0h7.6v13h-7.6zM207.6 228.0h7.6v13h-7.6zM215.2 228.0h7.6v13h-7.6zM222.8 228.0h7.6v13h-7.6zM238.0 228.0h7.6v13h-7.6zM245.6 228.0h7.6v13h-7.6zM283.6 228.0h7.6v13h-7.6zM291.2 228.0h7.6v13h-7.6zM306.4 228.0h7.6v13h-7.6zM314.0 228.0h7.6v13h-7.6zM321.6 228.0h7.6v13h-7.6zM329.2 228.0h7.6v13h-7.6zM336.8 228.0h7.6v13h-7.6zM344.4 228.0h7.6v13h-7.6zM367.2 228.0h7.6v13h-7.6zM374.8 228.0h7.6v13h-7.6zM86.0 241.0h7.6v13h-7.6zM93.6 241.0h7.6v13h-7.6zM108.8 241.0h7.6v13h-7.6zM116.4 241.0h7.6v13h-7.6zM154.4 241.0h7.6v13h-7.6zM162.0 241.0h7.6v13h-7.6zM177.2 241.0h7.6v13h-7.6zM184.8 241.0h7.6v13h-7.6zM215.2 241.0h7.6v13h-7.6zM222.8 241.0h7.6v13h-7.6zM238.0 241.0h7.6v13h-7.6zM245.6 241.0h7.6v13h-7.6zM283.6 241.0h7.6v13h-7.6zM291.2 241.0h7.6v13h-7.6zM306.4 241.0h7.6v13h-7.6zM314.0 241.0h7.6v13h-7.6zM344.4 241.0h7.6v13h-7.6zM352.0 241.0h7.6v13h-7.6zM367.2 241.0h7.6v13h-7.6zM374.8 241.0h7.6v13h-7.6zM48.0 254.0h7.6v13h-7.6zM55.6 254.0h7.6v13h-7.6zM63.2 254.0h7.6v13h-7.6zM70.8 254.0h7.6v13h-7.6zM78.4 254.0h7.6v13h-7.6zM86.0 254.0h7.6v13h-7.6zM93.6 254.0h7.6v13h-7.6zM116.4 254.0h7.6v13h-7.6zM124.0 254.0h7.6v13h-7.6zM131.6 254.0h7.6v13h-7.6zM139.2 254.0h7.6v13h-7.6zM146.8 254.0h7.6v13h-7.6zM154.4 254.0h7.6v13h-7.6zM177.2 254.0h7.6v13h-7.6zM184.8 254.0h7.6v13h-7.6zM215.2 254.0h7.6v13h-7.6zM222.8 254.0h7.6v13h-7.6zM245.6 254.0h7.6v13h-7.6zM253.2 254.0h7.6v13h-7.6zM260.8 254.0h7.6v13h-7.6zM268.4 254.0h7.6v13h-7.6zM276.0 254.0h7.6v13h-7.6zM283.6 254.0h7.6v13h-7.6zM306.4 254.0h7.6v13h-7.6zM314.0 254.0h7.6v13h-7.6zM344.4 254.0h7.6v13h-7.6zM352.0 254.0h7.6v13h-7.6zM367.2 254.0h7.6v13h-7.6zM374.8 254.0h7.6v13h-7.6z" fill="url(#artg)" filter="url(#glow)"/>
+  </g>
+
+  <!-- separator -->
+  <line class="l" style="animation-delay:1.60s" x1="490" y1="96" x2="490" y2="280" stroke="#30363D" stroke-dasharray="3 5"/>
+
+  <!-- system info -->
+  <g>
+    <text class="l" style="animation-delay:1.60s" x="520" y="112"><tspan fill="#3FB950">ayyoub</tspan><tspan fill="#C9D1D9">@</tspan><tspan fill="#58A6FF">github</tspan></text>
+    <text class="l dim" style="animation-delay:1.72s" x="520" y="130">─────────────</text>
+    <g class="l" style="animation-delay:1.84s"><text x="520" y="152" fill="#F5B83D">Role</text><text x="628" y="152" fill="#8B949E">:</text><text x="644" y="152" fill="#E6EDF3">Full-Stack Developer</text></g>
+    <g class="l" style="animation-delay:1.96s"><text x="520" y="174" fill="#F5B83D">Location</text><text x="628" y="174" fill="#8B949E">:</text><text x="644" y="174" fill="#E6EDF3">Morocco</text></g>
+    <g class="l" style="animation-delay:2.08s"><text x="520" y="196" fill="#F5B83D">Languages</text><text x="628" y="196" fill="#8B949E">:</text><text x="644" y="196" fill="#E6EDF3">Python, C#, Java, JavaScript</text></g>
+    <g class="l" style="animation-delay:2.20s"><text x="520" y="218" fill="#F5B83D">Backend</text><text x="628" y="218" fill="#8B949E">:</text><text x="644" y="218" fill="#E6EDF3">Django, .NET</text></g>
+    <g class="l" style="animation-delay:2.32s"><text x="520" y="240" fill="#F5B83D">Frontend</text><text x="628" y="240" fill="#8B949E">:</text><text x="644" y="240" fill="#E6EDF3">React, Tailwind CSS</text></g>
+    <g class="l" style="animation-delay:2.44s"><text x="520" y="262" fill="#F5B83D">Databases</text><text x="628" y="262" fill="#8B949E">:</text><text x="644" y="262" fill="#E6EDF3">MySQL, SQLite</text></g>
+    <g class="l" style="animation-delay:2.56s"><text x="520" y="284" fill="#F5B83D">DevOps</text><text x="628" y="284" fill="#8B949E">:</text><text x="644" y="284" fill="#E6EDF3">Docker, AWS, Git, Heroku</text></g>
+    <g class="l" style="animation-delay:2.68s"><text x="520" y="306" fill="#F5B83D">Data / AI</text><text x="628" y="306" fill="#8B949E">:</text><text x="644" y="306" fill="#E6EDF3">Pandas, NumPy, OpenCV, Selenium</text></g>
+    <g class="l" style="animation-delay:2.80s"><text x="520" y="328" fill="#F5B83D">Learning</text><text x="628" y="328" fill="#8B949E">:</text><text x="644" y="328" fill="#E6EDF3">Data Science &amp; Machine Learning</text></g>
+    <g class="l" style="animation-delay:2.92s"><text x="520" y="350" fill="#F5B83D">Status</text><text x="628" y="350" fill="#8B949E">:</text><text x="644" y="350" fill="#E6EDF3">Open to collaboration</text></g>
+    <circle class="l pulse" style="animation-delay:2.92s" cx="832" cy="345" r="4.5" fill="#3FB950"/>
+    <g class="l" style="animation-delay:3.16s"><rect x="520" y="389" width="30" height="14" fill="#484F58"/><rect x="550" y="389" width="30" height="14" fill="#FF7B72"/><rect x="580" y="389" width="30" height="14" fill="#3FB950"/><rect x="610" y="389" width="30" height="14" fill="#F5B83D"/><rect x="640" y="389" width="30" height="14" fill="#58A6FF"/><rect x="670" y="389" width="30" height="14" fill="#BC8CFF"/><rect x="700" y="389" width="30" height="14" fill="#39C5CF"/><rect x="730" y="389" width="30" height="14" fill="#E6EDF3"/></g>
+  </g>
+
+  <!-- live prompt -->
+  <g class="l" style="animation-delay:3.28s">
+    <line x1="48" y1="410" x2="1152" y2="410" stroke="#21262D"/>
+    <text x="48" y="436"><tspan fill="#3FB950">➜ </tspan><tspan fill="#58A6FF">~ </tspan><tspan fill="#8B949E"># thanks for visiting — let's build something</tspan></text>
+    <rect class="cursor" x="445" y="423" width="9" height="17" fill="#3FB950"/>
+    <text x="1152" y="436" text-anchor="end" fill="#484F58">python · c# · .net · django · react</text>
+  </g>
+
+  <!-- CRT overlay -->
+  <rect width="1200" height="470" fill="url(#scan)" pointer-events="none"/>
+  <rect class="roll" width="1200" height="40" fill="#58A6FF" opacity="0.025"/>
+  <rect x="0.5" y="0.5" width="1199" height="469" rx="11.5" fill="none" stroke="#30363D"/>
+</g>
 </svg>
