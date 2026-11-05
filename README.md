@@ -1,6 +1,6 @@
 <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0E75B6,100:58A6FF&height=220&section=header&text=Ayyoub%20Sghuri&fontSize=70&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20Python%20%26%20.NET%20%E2%80%A2%20Morocco%20%F0%9F%87%B2%F0%9F%87%A6&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="header" />
+  <img src="./header.svg" width="100%" alt="Ayyoub Sghuri — Full-Stack Developer" />
 </div>
 
 <div align="center">
@@ -17,9 +17,6 @@
   <img src="https://komarev.com/ghpvc/?username=Ayyoubsghuri&label=Profile%20Views&color=0e75b6&style=for-the-badge" />
 </p>
 
-<div align="center">
-  <img src="https://github.com/AyyoubSghuri/AyyoubSghuri/blob/main/.github/workflows/Green%20and%20White%20Minimalist%20Brand%20Fashion%20Linkedin%20Banner.png?raw=true" alt="Banner" width="100%" />
-</div>
 
 <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
 
