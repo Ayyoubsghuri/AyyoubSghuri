@@ -107,39 +107,12 @@ me.say_hi()
 </p>
 </details>
 
-<!-- ═══════════════════════════ STATS ═══════════════════════════ -->
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Ayyoubsghuri&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayyoubsghuri&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" />
-
-<img width="80%" src="https://streak-stats.demolab.com?user=Ayyoubsghuri&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" />
-
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ayyoubsghuri&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&area_color=0E75B6&hide_border=true" />
-
-</div>
-
 <!-- ═══════════════════════════ TROPHIES ═══════════════════════════ -->
 
 ## 🏆 Trophies
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Ayyoubsghuri&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" />
-</div>
-
-<!-- ═══════════════════════════ SNAKE ═══════════════════════════ -->
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/github-snake.svg" />
-    <img alt="Contribution snake" src="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/github-snake.svg" />
-  </picture>
 </div>
 
 <!-- ═══════════════════════════ CONNECT ═══════════════════════════ -->
