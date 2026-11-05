@@ -1,206 +1,167 @@
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <div align="center">
-  <a href="https://www.youtube.com/@TheXDNHOOPedits" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
-  </a>
-  <a href="https://www.linkedin.com/in/ayyoub-sghuri-2b65a627a/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:ayyoub.sghuri@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://github.com/Ayyoubsghuri" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0E75B6,100:58A6FF&height=220&section=header&text=Ayyoub%20Sghuri&fontSize=70&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20Python%20%26%20.NET%20%E2%80%A2%20Morocco%20%F0%9F%87%B2%F0%9F%87%A6&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="header" />
 </div>
 
----
-
 <div align="center">
-  <img src="https://github.com/AyyoubSghuri/AyyoubSghuri/blob/main/.github/workflows/Green%20and%20White%20Minimalist%20Brand%20Fashion%20Linkedin%20Banner.png" alt="Banner" width="100%" />
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Building+scalable+full-stack+apps+%F0%9F%9A%80;Django+%E2%80%A2+React+%E2%80%A2+.NET+%E2%80%A2+C%23;Exploring+Data+Science+%26+Machine+Learning+%F0%9F%A7%A0;Turning+ideas+into+elegant+code+%E2%9C%A8" alt="Typing SVG" />
+  </a>
 </div>
-
----
-
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=32&center=true&vCenter=true&width=600&height=70&duration=3000&lines=Hello,+I'm+Ayyoub+Sghuri;Full-Stack+Developer;Python+%26+.NET+Specialist;Problem+Solver+%26+Innovator" />
-</h1>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Ayyoubsghuri&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
-</div>
-
----
-
-## 👨‍💻 About Me
 
 <p align="center">
-  <strong>Full-Stack Developer</strong> with a passion for building scalable applications and solving complex problems.
-  <br />
-  Based in <strong>Morocco</strong> 🇲🇦
+  <a href="https://www.linkedin.com/in/ayyoub-sghuri-2b65a627a/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:ayyoub.sghuri@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.youtube.com/@TheXDNHOOPedits"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
+  <a href="https://github.com/Ayyoubsghuri/AyyoubSghuri/blob/main/Resume.pdf"><img src="https://img.shields.io/badge/Resume-58A6FF?style=for-the-badge&logo=readthedocs&logoColor=white" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Ayyoubsghuri&label=Profile%20Views&color=0e75b6&style=for-the-badge" />
 </p>
 
-<table align="center" border="0" cellpadding="10">
-  <tr>
-    <td valign="top" width="50%">
-      <ul>
-        <li>🔭 <strong>Currently Working:</strong> Full-Stack Development & Python Engineering</li>
-        <li>📚 <strong>Learning:</strong> Data Science & Machine Learning</li>
-        <li>💡 <strong>Creative:</strong> Turning ideas into elegant code solutions</li>
-      </ul>
-    </td>
-    <td valign="top" width="50%">
-      <ul>
-        <li>📫 <strong>Email:</strong> <a href="mailto:ayyoub.sghuri@gmail.com">ayyoub.sghuri@gmail.com</a></li>
-        <li>📄 <strong>Resume:</strong> <a href="https://github.com/Ayyoubsghuri/AyyoubSghuri/blob/main/Resume.pdf">View PDF</a></li>
-        <li>🌐 <strong>Portfolio:</strong> <em>Coming Soon</em></li>
-      </ul>
-    </td>
-  </tr>
+<div align="center">
+  <img src="https://github.com/AyyoubSghuri/AyyoubSghuri/blob/main/.github/workflows/Green%20and%20White%20Minimalist%20Brand%20Fashion%20Linkedin%20Banner.png?raw=true" alt="Banner" width="100%" />
+</div>
+
+<!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> About Me
+
+<table>
+<tr>
+<td width="55%" valign="top">
+
+```python
+class AyyoubSghuri:
+    def __init__(self):
+        self.role      = "Full-Stack Developer"
+        self.location  = "Morocco 🇲🇦"
+        self.languages = ["Python", "C#", "Java", "JavaScript"]
+        self.focus     = ["Full-Stack Development", "Python Engineering"]
+        self.learning  = ["Data Science", "Machine Learning"]
+        self.portfolio = "Coming soon 👀"
+
+    def say_hi(self):
+        return "Thanks for dropping by — let's build something great!"
+
+me = AyyoubSghuri()
+me.say_hi()
+```
+
+</td>
+<td width="45%" valign="top">
+
+- 🔭 Building **scalable web apps** end to end
+- 🐍 Shipping backends with **Django** and **.NET**
+- ⚛️ Crafting UIs with **React** + **Tailwind**
+- 🧠 Leveling up in **Data Science & ML**
+- 🤖 Automating the boring stuff with **Selenium**
+- 🎬 Editing hoop highlights on **YouTube** in my free time
+- 📫 Reach me: **ayyoub.sghuri@gmail.com**
+
+</td>
+</tr>
 </table>
 
----
+<!-- ═══════════════════════════ TECH STACK ═══════════════════════════ -->
 
-## 🛠️ Technical Expertise
+## 🛠️ Tech Stack
 
-<h3 align="center">Core Technologies</h3>
+<details open>
+<summary><b>💻 Languages</b></summary>
+<br />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cs,java,js,html,css&perline=6" />
+</p>
+</details>
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/python/3776AB" width="48" height="48" alt="Python" />
-        <br /><strong>Python</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/django/092E20" width="48" height="48" alt="Django" />
-        <br /><strong>Django</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/react/61DAFB" width="48" height="48" alt="React" />
-        <br /><strong>React</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="48" height="48" alt=".NET" />
-        <br /><strong>.NET</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/csharp/239120" width="48" height="48" alt="C#" />
-        <br /><strong>C#</strong>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/java/007396" width="48" height="48" alt="Java" />
-        <br /><strong>Java</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="48" height="48" alt="JavaScript" />
-        <br /><strong>JavaScript</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="48" height="48" alt="Tailwind" />
-        <br /><strong>Tailwind</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/mysql/4479A1" width="48" height="48" alt="MySQL" />
-        <br /><strong>MySQL</strong>
-      </td>
-      <td align="center" width="100">
-        <img src="https://cdn.simpleicons.org/sqlite/003B57" width="48" height="48" alt="SQLite" />
-        <br /><strong>SQLite</strong>
-      </td>
-    </tr>
-  </table>
-</div>
+<details open>
+<summary><b>🧩 Frameworks & Libraries</b></summary>
+<br />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=django,dotnet,react,tailwind,opencv&perline=6" />
+</p>
+</details>
 
-<h3 align="center">DevOps & Tools</h3>
+<details open>
+<summary><b>🗄️ Databases</b></summary>
+<br />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mysql,sqlite&perline=6" />
+</p>
+</details>
+
+<details open>
+<summary><b>☁️ DevOps & Tools</b></summary>
+<br />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=docker,aws,git,github,heroku,figma,vscode&perline=7" />
+</p>
+</details>
+
+<details>
+<summary><b>📊 Data & AI</b></summary>
+<br />
+<p align="center">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" />
+  <img src="https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+</p>
+</details>
+
+<!-- ═══════════════════════════ STATS ═══════════════════════════ -->
+
+## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Ayyoubsghuri&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayyoubsghuri&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" />
+
+<img width="80%" src="https://streak-stats.demolab.com?user=Ayyoubsghuri&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" />
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ayyoubsghuri&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&area_color=0E75B6&hide_border=true" />
+
 </div>
 
-<h3 align="center">Data & AI</h3>
+<!-- ═══════════════════════════ TROPHIES ═══════════════════════════ -->
+
+## 🏆 Trophies
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium" />
-  <img src="https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Ayyoubsghuri&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" />
 </div>
 
----
+<!-- ═══════════════════════════ SNAKE ═══════════════════════════ -->
 
-## 📊 Performance Metrics
+## 🐍 Contribution Snake
 
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Ayyoubsghuri&show_icons=true&count_private=true&hide_border=true&theme=radical&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF" alt="GitHub Stats" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayyoubsghuri&layout=compact&hide_border=true&theme=radical&bg_color=0D1117&title_color=58A6FF" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/github-snake.svg" />
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/github-snake.svg" />
+  </picture>
 </div>
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=Ayyoubsghuri&theme=radical&hide_border=true&background=0D1117&fire=58A6FF&ring=58A6FF" alt="GitHub Streak" />
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ayyoubsghuri&theme=radical&no-frame=true&no-bg=true&row=1&column=6" alt="GitHub Trophies" />
-</div>
-
----
-
-## 📈 Activity Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayyoubsghuri&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&hide_border=true" alt="Activity Graph" />
-</div>
-
----
+<!-- ═══════════════════════════ CONNECT ═══════════════════════════ -->
 
 ## 🤝 Let's Connect
 
 <p align="center">
-  I'm always open to interesting conversations, collaboration opportunities, or just a friendly chat. Feel free to reach out!
+  Open to collaborations, freelance work, and interesting conversations. <br />
+  <b>Feel free to reach out — I usually reply fast ⚡</b>
 </p>
 
+<p align="center">
+  <a href="https://www.linkedin.com/in/ayyoub-sghuri-2b65a627a/"><img src="https://skillicons.dev/icons?i=linkedin" height="44" /></a>&nbsp;
+  <a href="mailto:ayyoub.sghuri@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="44" /></a>&nbsp;
+  <a href="https://github.com/Ayyoubsghuri"><img src="https://skillicons.dev/icons?i=github" height="44" /></a>
+</p>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
 <div align="center">
-  <a href="https://www.linkedin.com/in/ayyoub-sghuri-2b65a627a/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:ayyoub.sghuri@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://www.youtube.com/@TheXDNHOOPedits" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
-  </a>
-</div>
-
----
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Ayyoubsghuri/Ayyoubsghuri/output/snake.svg" alt="Snake animation" />
-</div>
-
----
-
-<div align="center">
-  <sub>
-    <strong>© 2026 Ayyoub Sghuri</strong> — Built with ❤️ and code
-  </sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:0E75B6,100:0D1117&height=120&section=footer" width="100%" />
+  <sub><b>© 2026 Ayyoub Sghuri</b> — Built with ❤️ and code</sub>
 </div>
